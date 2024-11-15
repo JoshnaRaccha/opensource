@@ -1,0 +1,7 @@
+a,b,c=map(int,input().split())
+t=a*b
+t_a=c*24*60
+if t<t_a:
+    print("YES")
+else:
+    print("NO")
