@@ -1,0 +1,6 @@
+a=int(input())
+b=1
+for i in range(1,a+1):
+    r=[str(b+j)for j in range(i)]
+    print(" ".join(r))
+    b+=i
