@@ -1,0 +1,8 @@
+v,c=input().split()
+w={'R':'S','P':'R','S':'P'}
+if v==c:
+    print("NULL")
+elif w[v]==c:
+    print("Vignesh")
+else:
+    print("charan")
