@@ -1,0 +1,6 @@
+a=input().strip()
+b=sum(int(b)for b in a)
+if b%2==0:
+    print("Vignesh")
+else:
+    print("Charan")
