@@ -1,0 +1,9 @@
+a=int(input())
+b=list(map(int,input().split()))
+s=set()
+r=[]
+for i in b:
+    if i not in s:
+        r.append(i)
+        s.add(i)
+print(" ".join(map(str,r)))
