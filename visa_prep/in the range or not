@@ -1,0 +1,7 @@
+t=int(input())
+f=[int(input())for _ in range(t)]
+for x in f:
+    if 67<=x<=45000:
+        print("YES")
+    else:
+        print("NO")
