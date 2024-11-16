@@ -1,0 +1,6 @@
+a=int(input())
+c_3=a//3
+c_5=a//5
+c_15=a//15
+t=c_3+c_5-c_15
+print(t)
