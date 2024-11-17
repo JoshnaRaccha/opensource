@@ -1,0 +1,6 @@
+a=int(input())
+b=list(map(int,input().split()))
+c=int(input())
+c=c%a
+r=b[-c:]+b[:-c] if c!=0 else b
+print(" ".join(map(str,r)))
