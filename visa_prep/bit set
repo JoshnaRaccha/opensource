@@ -1,0 +1,7 @@
+a=int(input().strip())
+b=int(input().strip())
+m=1<<(b-1)
+if b&m:
+    print("true")
+else:
+    print("flase")
