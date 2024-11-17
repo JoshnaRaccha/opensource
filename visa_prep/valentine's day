@@ -1,0 +1,3 @@
+a,b=map(int,input().split())
+choco=a//b
+print(choco)
