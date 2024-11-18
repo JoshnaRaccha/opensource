@@ -1,0 +1,8 @@
+n=int(input())
+arr=list(map(int,input().split()))
+c=True
+for i in range(1,n):
+    if arr[i-1]>arr[i]:
+        c=False
+        break
+print("true" if c else "false")
