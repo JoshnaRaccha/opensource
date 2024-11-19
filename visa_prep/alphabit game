@@ -1,0 +1,14 @@
+def c(n):
+    v=set("aeiouAEIOU")
+    con=set("bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ")
+    v_c=0
+    c_c=0
+    for char in n:
+        if char in v:
+            v_c+=1
+        elif char in con:
+            c_c+=1
+    return v_c,c_c
+n=input()
+v_c,c_c=c(n)
+print(f"{v_c},{c_c}")
