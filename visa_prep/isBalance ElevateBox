@@ -1,0 +1,8 @@
+a=int(input())
+b=list(map(int,input().split()))
+c=[]
+for i in range(a):
+    lef=sum(b[:i])
+    rig=sum(b[i+1:])
+    c.append(abs(lef-rig))
+print(" ".join(map(str,c)))
