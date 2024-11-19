@@ -1,0 +1,21 @@
+def fix_grid(g, n,m): 
+    r = set()
+    c = set()
+    for i in range(n):
+        for j in range(m):
+            if g[i][j] == 0:
+                r.add(i)
+                c.add(j)
+    for i in range(n):
+        for j in range(m):
+            if i in r or j in c:
+                g[i][j] = 0
+    for row in g:
+        print(" ".join(map(str, row)))
+
+
+if __name__ == '__main__':
+    n, m = map(int, input().strip().split())  
+    g = [list(map(int, input().strip().split())) for _ in range(n)] 
+    
+    fix_grid(g, n, m)
